@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>save-association-by-KNH|Activities</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+   
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+ <div class="popup-container" id="blur">
+  <div class="content">
+     <!-- Navbar section--> 
+     <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand" href="index.php">
+                  <img decoding="async" src="images/logoo1.png" class="img-fluid" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                      <!-- Dropdown items -->
+                      <a class="dropdown-item" href="education.html">Education</a>
+                      <a class="dropdown-item" href="health.html">Health</a>
+                      <a class="dropdown-item" href="shelter.html">Shelter</a>
+                      <a class="dropdown-item" href="nutrition.html">Nutrition</a>
+                      <a class="dropdown-item" href="safety.html">Safety</a>
+                      <a class="dropdown-item" href="activities.html">Activities</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link"  onclick="toggle()" href="#donate">Donate</a>
+                  </li>
+                 
+                 
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     </header>
+
+
+
+     <!-- Navbar section exit -->
+
+
+
+
+
+          <!-- About section --> 
+     <section id="about" class="about_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-mb-0 mb-5">
+                    <div class="position-relative">
+                        <img decoding="async" src="images/activitiespics/activitiess.png" >
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Empowering Childhood: Fostering Learning and Creativity</h2>
+                    <p>Children thrive when they have opportunities for learning, exploration, and creative expression. Our activities program is dedicated to providing enriching experiences that contribute to the holistic development of children.</p>
+                    <p>By donating to our activities program, you can help us create a vibrant and stimulating environment for children in need. Your contribution supports the provision of educational materials, art supplies, sports equipment, and recreational activities that foster their curiosity, imagination, and social skills. Together, we can empower children to discover their talents, build self-confidence, and create lasting memories.</p>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- About section exit -->
+
+
+      <!-- Success Stories Section -->
+      <section id="success-stories" class="success-wrapper" style=" background-color: #e1f5ff;">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 text-center mb-5" style="padding-top:14px;">
+                  <h3 style="color:#1A3263; ">Inspiring Journeys: Transforming Lives Through Activities</h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                   <div class="story-img">
+                      <img decoding="async" src="./images/healthpics/7yogirl.svg" class="img-fluid">
+                   </div>
+                   <h5 id="h5healthCateg" style=" text-align:center;  padding-top:20px;">Malak's Story</h5>
+                   <div class="story-info pt-4 text-center">
+                    <p>Malak, a 10-year-old girl, had a passion for art but lacked the resources to pursue her creative interests. Through our activities program, Malak was provided with art supplies and access to art workshops. She discovered her talent for painting and found solace and self-expression through her artwork. Today, Malak's paintings are showcased in local galleries, and she dreams of becoming a professional artist, thanks to the support and encouragement she received from our activities program.</p>
+                   </div>
+                </div>
+             </div>
+             
+             <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                   <div class="story-img">
+                      <img decoding="async" src="./images/healthpics/10yoboy.svg" class="img-fluid">
+                   </div>
+                   <h5 id="h5healthCateg"  style="text-align:center;  padding-top:20px;">Said's Story</h5>
+                   <div class="story-info pt-4 text-center">
+                    <p>Said, a shy and introverted 8-year-old boy, struggled to make friends and express himself. Through our activities program, Said was introduced to a variety of group activities such as team sports and drama classes. These experiences helped him break out of his shell, build confidence, and develop strong social skills. Said is now an active participant in school plays and sports teams, and he has formed lasting friendships that have positively impacted his overall well-being.</p>
+                   </div>
+                </div>
+             </div>
+             
+             <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                   <div class="story-img">
+                      <img decoding="async" src="./images/stories/10yoboy.png" class="img-fluid">
+                   </div>
+                   <h5 id="h5healthCateg" style="text-align:center;  padding-top:20px;">Kamal's Story</h5>
+                   <div class="story-info pt-4 text-center">
+                    <p>Kamal, a 12-year-old boy from a disadvantaged background, had limited access to educational resources and struggled academically. Through our activities program, Kamal was provided with after-school tutoring, mentoring, and access to educational games and materials. He discovered a love for science and technology and developed strong academic skills. With the support of our program,Kamal earned a scholarship to a prestigious STEM-focused school and is now pursuing his dream of becoming a scientist, breaking the cycle of poverty in his family.</p>
+                   </div>
+                   </div>
+                </div>
+             </div>
+             
+                     
+         </div>
+             
+              
+              
+        </div>
+       </section>
+          <!-- Success Stories Section End -->
+
+
+        <!--donation info-->
+          <div class="donation-section">
+            <h3 class="mb-4" style="color:#1A3263">How your donation makes a difference</h3>
+            <div class="education-donation">
+               <div class="donation-item mb-4">
+                  <div class="donation-icon">
+                     <img src="./images/activitiespics/paint-palette.png" class="img-fluid">
+                  </div>
+                  <div class="donation-info">
+                     <h4 class="text-secondary mb-2">$30 can provide art supplies for a child to explore their creativity</h4>
+                  </div>
+               </div>
+               <div class="donation-item mb-4">
+                  <div class="donation-icon">
+                     <img src="./images/activitiespics/sports.png" class="img-fluid">
+                  </div>
+                  <div class="donation-info">
+                     <h4 class="text-secondary mb-2">$50 can provide sports equipment for a child to participate in team activities</h4>
+                  </div>
+               </div>
+               <div class="donation-item mb-4">
+                  <div class="donation-icon">
+                     <img src="./images/activitiespics/rubik.png" class="img-fluid">
+                  </div>
+                  <div class="donation-info">
+                     <h4 class="text-secondary mb-2">$20 can provide educational games and materials for a child to learn and grow</h4>
+                  </div>
+               </div>
+               <div class="donation-item mb-4">
+                  <div class="donation-icon">
+                     <img src="./images/activitiespics/music-instrument.png" class="img-fluid">
+                  </div>
+                  <div class="donation-info">
+                    <h4 class="text-secondary mb-2">$40 can provide musical instruments for a child to explore the world of music</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!--donation info  exit-->
+    
+
+    
+                    
+
+     <!--new members --> 
+     <section id="stayhere" class="quote_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                        <a href="#stayhere" class="mt-5 main-btn fill-btn  btn-move " onclick="toggle()">Donate now</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- new members section Exit -->
+                  
+
+    
+
+     <!-- Footer section --> 
+  
+       <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Association Location</h5>
+                    <p class="ps-0">123 Rue Mohammed V
+                        Quartier Gauthier
+                        20000 Casablanca
+                        Morocco</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><i class="fa fa-phone me-3"></i>+212 6822 3933 897</li>
+                            <li><i class="fa fa-envelope me-3"></i>save@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>info</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#">Our Programs</a></li>
+                        <li><a href="#">How to donate</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>More info</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#">Our Programs</a></li>
+                        <li><a href="#">How to donate</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Enter Your Email Here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white"><a href="http://127.0.0.1:5500/login.html#">Subscribe</a></button>
+
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0 ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p class="p-0">Copyright <a href="#">©SAVEKNH.</a> All Rights Reserved</p>
+        </div>
+      </section>
+ 
+      <!-- Footer section exit -->
+    </div>
+  </div>
+     
+    
+   <!-- Donation Form -->
+<div id="dpopup">
+    <div class="container">
+
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <h3 class="title">User info</h3>
+                    <div class="form-group mb-3">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Aemd Al" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="inputCategory" class="form-label">Category</label>
+                        <select id="inputCategory" class="form-select" name="Category" required disabled>
+                           
+                            <option>Activities</option>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="amount">Amount:</label>
+                        <input type="text" class="form-control" id="amount" name="amount" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-2">
+                    <h3 class="title">Payment</h3>
+                    <div class="form-group mb-3">
+                        <label for="cardsAccepted" class="mt-1">Cards Accepted:</label>
+                        <img src="images/card_img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="nameOnCard">Name on Card:</label>
+                        <input type="text" class="form-control" id="nameOnCard" name="nameOnCard" placeholder="Mr. Ahemd Al" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="creditCardNumber">Credit Card Number:</label>
+                        <input type="text" class="form-control" id="creditCardNumber" name="creditCardNumber" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="expMonth">Exp Month:</label>
+                        <input type="text" class="form-control" id="expMonth" name="expMonth" placeholder="January" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="expYear">Exp Year:</label>
+                                <input type="text" class="form-control" id="expYear" name="expYear" placeholder="2022" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="1234" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Submit Donation" class="btn btn-primary mt-3">
+            </div>
+        </form>
+    </div>
+    <a href="#" class="main-btn mt-4 fill-btn" onclick="toggle()">Close</a>
+   </div>
+
+
+
+
+
+
+   
+
+
+   
+  
+    <!--Donation Form Exit-->
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Js Link -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        document.getElementById('dpopup').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche la soumission automatique du formulaire
+        
+        // Effectuer la redirection
+        window.location.href = 'login-register-main/login.php';
+    });
+    </script>
+
+
+</body>
+
+</html>
+
+        
